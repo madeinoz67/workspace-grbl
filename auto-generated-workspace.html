@@ -434,7 +434,7 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
             // com-chilipeppr-ws-autolevel
             // hiding auto leveller as unsure what features supported in grbl. will come back to this.
             // http:jsfiddle.net/jarret/uvVL6/
-            /*
+            
             chilipeppr.load(
                 "#com-chilipeppr-ws-autolevel",
                 "http://raw.githubusercontent.com/chilipeppr-grbl/grbl-widget-autolevel/master/auto-generated-widget.html",
@@ -461,28 +461,8 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
                         });
                     });
                 });
-                */
-
-            //new
-            // Inject new div to contain widget or use an existing div with an ID
-            $("body").append('<' + 'div id="myDivWidgetAutolevel"><' + '/div>');
-
-            chilipeppr.load(
-                "#myDivWidgetAutolevel",
-                "http://raw.githubusercontent.com/chilipeppr-grbl/grbl-widget-autolevel/master/auto-generated-widget.html",
-                function() {
-                    // Callback after widget loaded into #myDivWidgetAutolevel
-                    // Now use require.js to get reference to instantiated widget
-                    cprequire(
-                        ["inline:com-chilipeppr-widget-autolevel"], // the id you gave your widget
-                        function(myObjWidgetAutolevel) {
-                            // Callback that is passed reference to the newly loaded widget
-                            console.log("Widget / Auto-Level just got loaded.", myObjWidgetAutolevel);
-                            myObjWidgetAutolevel.init();
-                        }
-                    );
-                }
-            );
+                
+                
             /*
             // Inject new div to contain widget or use an existing div with an ID
             $("body").append('<' + 'div id="myDivWidgetAutolevel"><' + '/div>');
