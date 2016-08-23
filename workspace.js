@@ -1446,11 +1446,11 @@ cpdefine("inline:com-chilipeppr-workspace-se-grbl", ["chilipeppr_ready"], functi
 
 
             // GRBL
-            // http://jsfiddle.net/jarret/b5L2rtgc/ //alternate test version of grbl controller
+            // http://jsfiddle.net/madeinoz67/2rzuyatg/ //alternate test version of grbl controller
             // com-chilipeppr-grbl
             chilipeppr.load(
                 "com-chilipeppr-grbl",
-                "http://fiddle.jshell.net/jarret/9aaL8jg4/show/light/",
+                "http://fiddle.jshell.net/madeinoz67/2rzuyatg/show/light/",  
 
                 function() {
                     cprequire(
