@@ -1,9 +1,9 @@
-# com-chilipeppr-workspace-grbl
+# com-chilipeppr-workspace-se-grbl
 A ChiliPeppr Workspace grbl.
 
 
 
-## ChiliPeppr Workspace / grbl
+## ChiliPeppr SE Test Workspace / grbl
 
 All ChiliPeppr workspaces/widgets/elements are defined using cpdefine() which is a method
 that mimics require.js. Each defined object must have a unique ID so it does
@@ -11,8 +11,8 @@ not conflict with other ChiliPeppr objects.
 
 | Item                  | Value           |
 | -------------         | ------------- | 
-| ID                    | com-chilipeppr-workspace-grbl |
-| Name                  | Workspace / grbl |
+| ID                    | com-chilipeppr-workspace-se-grbl |
+| Name                  | SE Test Workspace / grbl |
 | Description           | A ChiliPeppr Workspace grbl. |
 | chilipeppr.load() URL | http://raw.githubusercontent.com/madeinoz67/workspace-grbl/master/auto-generated-workspace.html |
 | Edit URL              | http://ide.c9.io/madeinoz67/se-grbl |
@@ -39,11 +39,11 @@ chilipeppr.load(
     // Callback after workspace loaded into #pnlWorkspace
     // Now use require.js to get reference to instantiated workspace
     cprequire(
-      ["inline:com-chilipeppr-workspace-grbl"], // the id you gave your workspace
-      function(myWorkspaceGrbl) {
+      ["inline:com-chilipeppr-workspace-se-grbl"], // the id you gave your workspace
+      function(myWorkspaceSeGrbl) {
         // Callback that is passed reference to the newly loaded workspace
-        console.log("Workspace / grbl just got loaded.", myWorkspaceGrbl);
-        myWorkspaceGrbl.init();
+        console.log("SE Test Workspace / grbl just got loaded.", myWorkspaceSeGrbl);
+        myWorkspaceSeGrbl.init();
       }
     );
   }
@@ -135,7 +135,7 @@ The table below shows, in order, the methods and properties inside the workspace
           </tr>
       </thead>
       <tbody>
-      <tr valign="top"><td>id</td><td>string</td><td>"com-chilipeppr-workspace-grbl"<br><br>The ID of the widget. You must define this and make it unique.</td></tr><tr valign="top"><td>name</td><td>string</td><td>"Workspace / grbl"</td></tr><tr valign="top"><td>desc</td><td>string</td><td>"A ChiliPeppr Workspace grbl."</td></tr><tr valign="top"><td>url</td><td>string</td><td>"http://raw.githubusercontent.com/madeinoz67/workspace-grbl/master/auto-generated-workspace.html"</td></tr><tr valign="top"><td>fiddleurl</td><td>string</td><td>"http://ide.c9.io/madeinoz67/se-grbl"</td></tr><tr valign="top"><td>githuburl</td><td>string</td><td>"http://github.com/madeinoz67/workspace-grbl"</td></tr><tr valign="top"><td>testurl</td><td>string</td><td>"http://se-grbl-madeinoz67.c9users.io/workspace.html"</td></tr><tr valign="top"><td>widgetConsole</td><td>object</td><td>Contains reference to the Console widget object. Hang onto the reference
+      <tr valign="top"><td>id</td><td>string</td><td>"com-chilipeppr-workspace-se-grbl"<br><br>The ID of the widget. You must define this and make it unique.</td></tr><tr valign="top"><td>name</td><td>string</td><td>"SE Test Workspace / grbl"</td></tr><tr valign="top"><td>desc</td><td>string</td><td>"A ChiliPeppr Workspace grbl."</td></tr><tr valign="top"><td>url</td><td>string</td><td>"http://raw.githubusercontent.com/madeinoz67/workspace-grbl/master/auto-generated-workspace.html"</td></tr><tr valign="top"><td>fiddleurl</td><td>string</td><td>"http://ide.c9.io/madeinoz67/se-grbl"</td></tr><tr valign="top"><td>githuburl</td><td>string</td><td>"http://github.com/madeinoz67/workspace-grbl"</td></tr><tr valign="top"><td>testurl</td><td>string</td><td>"http://se-grbl-madeinoz67.c9users.io/workspace.html"</td></tr><tr valign="top"><td>widgetConsole</td><td>object</td><td>Contains reference to the Console widget object. Hang onto the reference
 so we can resize it when the window resizes because we want it to manually
 resize to fill the height of the browser so it looks clean.</td></tr><tr valign="top"><td>init</td><td>function</td><td>function () <br><br>The workspace's init method. It loads the all the widgets contained in the workspace
 and inits them.</td></tr><tr valign="top"><td>getBillboard</td><td>function</td><td>function () <br><br>Returns the billboard HTML, CSS, and Javascript for this Workspace. The billboard
